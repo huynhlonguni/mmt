@@ -7,6 +7,7 @@ import languages from './common/languages'
 import ElementMaker from './component/ElementMaker';
 import CircleIcon from './icons/CircleIcon';
 import XIcon from './icons/XIcon';
+import {Chatbot} from './component/Chatbot';
 export const globalContext = createContext()
 
 export default function App() {
@@ -94,15 +95,20 @@ export default function App() {
 		<globalContext.Provider value={{ conversations, language, current, status, setLanguage }}>
 			<div className="flex flex-row h-full gap-0 text-sm lg:text-base">
 				<audio id='messageAudio' src="/audio/message.mp3" />
-				<div className="hidden lg:flex" id="infoPanel">
+				<div className="hidden lg:flex lg:w-auto" id="infoPanel">
 					<div className="bg-white dark:bg-zinc-750 bg-opacity-80 dark:bg-opacity-60 backdrop-blur-xl h-full overflow-y-auto no-scrollbar">
 						<div className='absolute right-10 top-10 cursor-pointer lg:hidden' onClick={hideModal}>
 							<XIcon className="h-8 w-8 fill-zinc-600 dark:fill-white"/>
 						</div>
-						<div className="px-10 pt-10">
-							<div className='flex justify-center'>
-								<div className="text-[2rem] lg:text-[4rem] px-5 leading-none py-5 font-bold bg-gradient-to-r inline-block from-green-400 to-blue-500 bg-clip-text text-transparent">
-									3ChangDev
+						<div className="px-10">
+							<div className='flex flex-col justify-center' id="nameBox">
+								<div id="spine" className='flex justify-center'>
+									<Chatbot />
+								</div>
+								<div className='flex justify-center'>
+									<div className="text-[2rem] lg:text-[4rem] px-5 leading-none pb-5 font-bold bg-gradient-to-r inline-block from-green-400 to-blue-500 bg-clip-text text-transparent">
+										3ChangDev
+									</div>
 								</div>
 							</div>
 							<div className=' '>
@@ -120,12 +126,12 @@ export default function App() {
 										</h1>
 									</div>
 								</button>
-								<div className=" h-[28rem] my-4 p-2 overflow-y-scroll no-scrollbar" id="conversationsBox">
+								<div className=" h-[18rem] lg:h-[20rem] my-4 px-2 overflow-y-scroll no-scrollbar" id="conversationsBox">
 									{conversations.map((conversation, i) => (
-										<div key={i}>
+										<div key={i} className="my-2 first:mt-0 last:mb-0">
 											<div className={i == current ?
-												"rounded-xl my-2 group w-full relative p-1 shadow-inner shadow-blue-500/50 dark:shadow-black" :
-												"rounded-xl my-2 group w-full relative p-1 shadow-lg shadow-blue-500/20 bg-white dark:bg-zinc-700 dark:shadow-md dark:shadow-indigo-900/30 cursor-pointer "
+												"rounded-xl group w-full relative p-1 shadow-inner shadow-blue-500/50 dark:shadow-black" :
+												"rounded-xl group w-full relative p-1 shadow-lg shadow-blue-500/20 bg-white dark:bg-zinc-700 dark:shadow-md dark:shadow-indigo-900/30 cursor-pointer "
 											}
 												onClick={() => setCurrent(i)} >
 												<div className='rounded-lg p-3 text-zinc-600 dark:text-white'>
@@ -169,7 +175,7 @@ export default function App() {
 						</div>
 					</div>
 				</div>
-				<div className="w-full relative" id="messagePanel">
+				<div className="w-full relative lg:block" id="messagePanel">
 					<Chat onSendMessage={onSendMessage} showModal={showModal} />
 				</div>
 			</div>

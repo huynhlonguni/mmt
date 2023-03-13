@@ -1,0 +1,104 @@
+
+Chatbot.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 226, 120
+  size: 125, 126
+  orig: 127, 128
+  offset: 1, 1
+  index: -1
+Face
+  rotate: false
+  xy: 2, 216
+  size: 222, 192
+  orig: 224, 194
+  offset: 1, 1
+  index: -1
+Head
+  rotate: true
+  xy: 289, 247
+  size: 262, 205
+  orig: 264, 207
+  offset: 1, 1
+  index: -1
+Left Arm
+  rotate: true
+  xy: 354, 183
+  size: 62, 91
+  orig: 64, 93
+  offset: 1, 1
+  index: -1
+Left Eye 1
+  rotate: true
+  xy: 2, 142
+  size: 72, 78
+  orig: 74, 80
+  offset: 1, 1
+  index: -1
+Left Eye 2
+  rotate: true
+  xy: 82, 142
+  size: 72, 78
+  orig: 74, 80
+  offset: 1, 1
+  index: -1
+Left Eye Depth
+  rotate: true
+  xy: 354, 109
+  size: 72, 78
+  orig: 74, 80
+  offset: 1, 1
+  index: -1
+Mouth
+  rotate: false
+  xy: 226, 380
+  size: 55, 28
+  orig: 57, 30
+  offset: 1, 1
+  index: -1
+Mouth 2
+  rotate: true
+  xy: 226, 353
+  size: 25, 31
+  orig: 27, 33
+  offset: 1, 1
+  index: -1
+Right Arm
+  rotate: false
+  xy: 447, 154
+  size: 62, 91
+  orig: 64, 93
+  offset: 1, 1
+  index: -1
+Right Eye 1
+  rotate: false
+  xy: 434, 74
+  size: 72, 78
+  orig: 74, 80
+  offset: 1, 1
+  index: -1
+Right Eye 2
+  rotate: true
+  xy: 2, 68
+  size: 72, 78
+  orig: 74, 80
+  offset: 1, 1
+  index: -1
+Right Eye Depth
+  rotate: true
+  xy: 82, 68
+  size: 72, 78
+  orig: 74, 80
+  offset: 1, 1
+  index: -1
+Shadow
+  rotate: false
+  xy: 2, 410
+  size: 285, 99
+  orig: 287, 101
+  offset: 1, 1
+  index: -1
