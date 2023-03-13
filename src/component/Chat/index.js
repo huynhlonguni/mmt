@@ -127,7 +127,7 @@ function Chat({ onSendMessage, showModal }) {
 					<button className="absolute right-14 inset-y-0" >
 						<DarkToggle/>
 					</button>
-					<a target="_blank" href="https://github.com/huynhlonguni/mmt2023" >
+					<a target="_blank" href="https://github.com/huynhlonguni/mmt" >
 						<button className="absolute right-4 inset-y-0">
 							<GitHubIcon className="h-6 w-6 fill-zinc-600 dark:fill-white" />
 						</button>
