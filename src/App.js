@@ -153,7 +153,7 @@ export default function App() {
 															})
 															e.stopPropagation()
 														}}>
-														<TrashIcon className="fill-zinc-600 dark:fill-white h-5 w-5 hover:fill-red-500" />
+														<TrashIcon className="fill-zinc-600 dark:fill-white h-5 w-5 hover:fill-red-500 hover:dark:fill-red-500" />
 													</button>
 												</div>
 											</div>
