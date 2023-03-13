@@ -95,8 +95,8 @@ function Chat({ onSendMessage, showModal }) {
 	}
 	return (
 		<div className="relative h-full top-0 bg-slate-200 dark:bg-zinc-950">
-			<nav class="absolute w-full px-4 z-20 top-0 bg-white dark:bg-zinc-750 bg-opacity-80 dark:bg-opacity-60 backdrop-blur-xl">
-				<div class="container flex flex-wrap items-center justify-between">
+			<nav className="absolute w-full px-4 z-20 top-0 bg-white dark:bg-zinc-750 bg-opacity-80 dark:bg-opacity-60 backdrop-blur-xl">
+				<div className="container flex flex-wrap items-center justify-between">
 					<div className="flex items-center  lg:select-none cursor-pointer">
 						<div onClick={showModal}>
 							<HamburgerIcon className="h-8 w-8 fill-zinc-600 dark:fill-white lg:fill-transparent lg:dark:fill-transparent" />

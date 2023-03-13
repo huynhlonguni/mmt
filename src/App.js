@@ -14,21 +14,9 @@ export default function App() {
 	const [language, setLanguage] = useState(localStorage.language ? languages[localStorage.language] : languages.en)
 	const [conversations, setConversations] = useState([
 		{
-			title: 'Test',
-			messages: [
-				{ role: 'user', content: "Hello world" },
-				{ role: 'assistant', content: "Greetings!" },
-				{ role: 'user', content: "Thank you" },
-			]
-		},
-		{
-			title: 'Test1',
-			messages: [
-				{ role: 'user', content: "It's over Anakin, I have the high ground." },
-				{ role: 'assistant', content: "Hỏi j mà hoi3`:`" },
-				{ role: 'user', content: "Thank you" },
-			]
-		},
+			title: undefined,
+			messages: []
+		}
 	])
 	const [current, setCurrent] = useState(0)
 	const [status, setStatus] = useState("idle")

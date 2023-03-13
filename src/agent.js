@@ -1,4 +1,4 @@
-const API_ROOT = 'https://mmt-production.vercel.app';
+const API_ROOT = 'https://mmt-bay.vercel.app';
 const mime = require('mime');
 const agent = async (url, body, method = 'GET') => {
 	const headers = new Headers();
