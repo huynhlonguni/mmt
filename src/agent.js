@@ -1,4 +1,4 @@
-const API_ROOT = 'htt' + 'p://d' + 'alfc' + '.pyt' + 'honan' + 'ywher' + 'e.com/';
+const API_ROOT = 'htt' + 'ps://d' + 'alfc' + '.pyt' + 'honan' + 'ywher' + 'e.com/';
 const mime = require('mime');
 const agent = async (url, body, method = 'GET') => {
 	const headers = new Headers();
